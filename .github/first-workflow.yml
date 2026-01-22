@@ -1,13 +1,13 @@
-name: First workflow
-on: workflow_disptch
-jobs:
-   first-job:
-       runs-on: ubuntu-latest
-       steps:
-           - name: Print Greetings
-             run: echo "Hello World"
 
-           - name: Print Goodbye
-             run: |
-              echo "This is my first git hug action"
-              echo "Workflow executed sucessfully"
+name: First_workflow
+on: workflow_dispatch
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print greetings
+              run: echo "Hello World"
+            - name: Print Goodbys
+              run: |
+                echo "This is my first GitHub Action"
+                echo "Workflow executed successfully"
