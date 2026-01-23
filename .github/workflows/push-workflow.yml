@@ -1,8 +1,5 @@
 name: Psuh_workflow
-on:
-    push:
-        branches:
-            - main
+on: [workflow_dispatch,push]
 jobs:
     first-job:
         runs-on: ubuntu-latest
@@ -12,4 +9,4 @@ jobs:
             - name: Print Goodbys
               run: |
                 echo "This is my first GitHub Action"
-                echo "Workflow executed successfully"
+                echo "Workflow executed successfully
